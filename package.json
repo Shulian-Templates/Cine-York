@@ -1,0 +1,39 @@
+{
+  "name": "cine-teatro-york",
+  "version": "1.0.0",
+  "description": "Reservá asientos en el Cine Teatro York eligiendo cantidad de entradas y seleccionando lugares en el mapa de la sala.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "start-bonus": "tsx src/bonus.ts",
+    "dev-bonus": "tsx watch src/bonus.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test-base": "vitest run tests/base.test.ts",
+    "test-bonus1": "vitest run tests/bonus1.test.ts",
+    "test-bonus2": "vitest run tests/bonus2.test.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@types/node": "^22.10.7",
+    "@types/ws": "^8.5.13",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0",
+    "vitest": "^3.0.4"
+  },
+  "dependencies": {
+    "open": "^10.1.0",
+    "ws": "^8.18.0"
+  }
+}

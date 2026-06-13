@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cine Teatro York</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Cine Teatro York</h1>
+
+    <section id="selector-entradas">
+      <p>Seleccioná la cantidad de entradas que vas a comprar</p>
+      <nav id="cantidad-entradas">
+        <button class="cantidad" data-cantidad="1">1</button>
+        <button class="cantidad" data-cantidad="2">2</button>
+        <button class="cantidad" data-cantidad="3">3</button>
+        <button class="cantidad" data-cantidad="4">4</button>
+        <button class="cantidad" data-cantidad="5">5</button>
+        <button class="cantidad" data-cantidad="6">6</button>
+      </nav>
+    </section>
+
+    <svg id="teatro" xmlns="http://www.w3.org/2000/svg"></svg>
+
+    <section id="compra">
+      <button id="boton-comprar">Comprar</button>
+      <p id="precio-total"></p>
+    </section>
+
+    <script src="teatro.js"></script>
+    <script src="websocket.js"></script>
+    <script defer src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'Vogue';
+  src: url('fonts/Vogue.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Melodrame';
+  src: url('fonts/melodrame.ttf') format('truetype');
+  font-style: normal;
+}
+
+:root {
+  --onyx: #0d0c0cff;
+  --dim-grey: #796d74ff;
+  --rosy-granite: #a29c9fff;
+  --faded-copper: #9d7f63ff;
+  --blazing-flame: #ff4711ff;
+  --alabaster-grey: #dcdddfff;
+  --snow: #f7f3f2ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--snow);
+  color: var(--onyx);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  font-family: 'Vogue', serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 4rem;
+  color: var(--onyx);
+  padding: 2rem 0rem;
+}
+
+#selector-entradas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+#selector-entradas p {
+  font-family: 'Melodrame', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+  color: var(--dim-grey);
+}
+
+#cantidad-entradas {
+  display: flex;
+  gap: 2rem;
+}
+
+.cantidad {
+  font-family: 'Vogue', serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: var(--onyx);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s;
+}
+
+.cantidad:hover {
+  border-bottom-color: var(--blazing-flame);
+}
+
+.cantidad.seleccionado {
+  border-bottom-color: var(--blazing-flame);
+}
+
+#teatro {
+  background-color: var(--alabaster-grey);
+  border-radius: 4px;
+}
+
+.asiento {
+  fill: var(--faded-copper);
+  stroke: var(--onyx);
+  stroke-width: 1.5;
+  cursor: pointer;
+}
+
+.asiento.seleccionado {
+  fill: var(--blazing-flame);
+  stroke: var(--onyx);
+}
+
+.etiqueta-asiento {
+  fill: var(--snow);
+  font-family: 'Melodrame', sans-serif;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+#compra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+#boton-comprar {
+  font-family: 'Vogue', serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: var(--onyx);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--onyx);
+  transition: border-color 0.15s;
+}
+
+#boton-comprar:hover,
+#boton-comprar:active {
+  border-bottom-color: var(--blazing-flame);
+}
+
+#precio-total {
+  font-family: 'Melodrame', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+  color: var(--dim-grey);
+}
+
+#escenario {
+  fill: var(--rosy-granite);
+}
+
+#escenario + text {
+  fill: var(--snow);
+  font-family: 'Vogue', serif;
+  font-size: 18px;
+  letter-spacing: 0.25em;
+}
