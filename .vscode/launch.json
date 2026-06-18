@@ -29,13 +29,13 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Debuggear Consigna Manija",
+      "name": "Debuggear Consigna Bonus",
       "runtimeExecutable": "node",
       "runtimeArgs": [
         "--import",
         "tsx"
       ],
-      "program": "${workspaceFolder}/src/manija.ts",
+      "program": "${workspaceFolder}/src/bonus.ts",
       "console": "integratedTerminal",
       "sourceMaps": true,
       "env": {
